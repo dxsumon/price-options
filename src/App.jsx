@@ -1,9 +1,11 @@
 import './App.css'
+import NavBar from './Components/Navbar/NavBar'
 
 function App() {
   return (
     <>
-      <h1 className='text-4xl bg-rose-400'>Vite + React</h1>
+      <NavBar></NavBar>
+      
     </>
   )
 }
