@@ -3,21 +3,21 @@
     "id": 1,
     "name": "Fitness First",
     "location": "123 Main Street",
-    "facilities": ["Cardio Machines", "Free Weights", "Group Classes"],
+    "facilities": ["Cardio Machines", "Free Weights", "Group Classes", "Personal Training", "Spinning Bikes"],
     "price": 50
   },
   {
     "id": 2,
     "name": "Gym Plus",
     "location": "456 Elm Street",
-    "facilities": ["Cardio Machines", "Weight Machines", "Pool", "Sauna"],
+    "facilities": ["Cardio Machines", "Weight Machines", "Pool", "Sauna", "Basketball Court", "Tennis Court"],
     "price": 60
   },
   {
     "id": 3,
     "name": "FitZone",
     "location": "789 Oak Avenue",
-    "facilities": ["Cardio Machines", "Yoga Studio", "CrossFit Area"],
+    "facilities": ["Cardio Machines", "Yoga Studio", "CrossFit Area", "Pilates Studio", "Rock Climbing Wall"],
     "price": 55
   }
 ]
