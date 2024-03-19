@@ -1,5 +1,6 @@
 import './App.css'
 import Gyms from './Components/GymsOption/Gyms'
+import Chart from './Components/LineChart/Chart'
 import NavBar from './Components/Navbar/NavBar'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Gyms></Gyms>
-      
+      <Chart></Chart>
     </>
   )
 }
