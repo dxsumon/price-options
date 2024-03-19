@@ -18,14 +18,17 @@ const NavBar = () => {
     //     setOpen(!open)
     // }
     return (
-        <nav className="p-1">
-            <div className="lg:hidden flex justify-end items-end w-full my-4 text-3xl text-black pr-8">
-                {
-                    // open === true ?
-                    //     <AiOutlineAlignRight></AiOutlineAlignRight>
-                    //     : <AiOutlineClose ></AiOutlineClose>
-                    <Hamburger toggled={openMenu} toggle={setOpenMenu} duration={0.3} easing="ease-in"></Hamburger>
-                }
+        <nav className="sticky top-0 z-20 drop-shadow-lg">
+            <div className="flex justify-center items-center bg-gray-500 text-white px-3">
+            <h1 className="text-2xl font-bold ">Fitness</h1>
+                <div className="lg:hidden flex justify-end items-end w-full my-4 text-3xl text-white pr-8">
+                    {
+                        // open === true ?
+                        //     <AiOutlineAlignRight></AiOutlineAlignRight>
+                        //     : <AiOutlineClose ></AiOutlineClose>
+                        <Hamburger toggled={openMenu} toggle={setOpenMenu} duration={0.3} easing="ease-in"></Hamburger>
+                    }
+                </div>
             </div>
             <ul className={`${openMenu ? 'top-[85px]' : 'top-[-300px]'} flex lg:flex-row flex-col lg:justify-center items-end gap-4 lg:gap-10 lg:text-xl backdrop-blur-md p-4 text-gray-600ra lg:top-0 lg:left-0 left-[75%] lg:w-full absolute duration-500 lg:relative lg:ml-0 w-[25%] border-2 border-gray-500 rounded-xl`}>
                 {
