@@ -17,14 +17,14 @@ const NavBar = () => {
     }
     return (
         <nav className="bg-slate-600 p-1">
-            <div onClick={openCloseHandle} className="lg:hidden flex justify-end items-end w-full my-4 text-3xl text-white pr-4">
+            <div onClick={openCloseHandle} className="lg:hidden flex justify-end items-end w-full my-4 text-3xl text-white pr-8">
                 {
                     open === true ?
                         <AiOutlineAlignRight></AiOutlineAlignRight>
                         : <AiOutlineClose ></AiOutlineClose>
                 }
             </div>
-            <ul className={`${open ? 'ml-[200px]' : '-ml-[0px]'} flex lg:flex-row flex-col lg:justify-center items-end gap-4 lg:gap-10 lg:text-xl bg-slate-600 p-4 text-white shadow-2xl lg:left-0 left-[79%] w-[24%] lg:w-full absolute duration-500 lg:relative lg:ml-0`}>
+            <ul className={`${open ? 'top-[-300px]' : 'top-[60px]'} flex lg:flex-row flex-col lg:justify-center items-end gap-4 lg:gap-10 lg:text-xl  bg-slate-600 p-4 text-white lg:top-0 lg:left-0 left-[75%] lg:w-full absolute duration-500 lg:relative lg:ml-0 w-[25%] `}>
                 {
                     navbarItems.map(item => <Link key={item.id} route={item}></Link>)
                 }
